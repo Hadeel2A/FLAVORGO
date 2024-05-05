@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head  lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The restaurants</title>
+        <link rel="stylesheet" href="css/theme1.css">
+        <link rel="icon" href="img/logo.ico">
+    </head>
+
+    <body> 
+     
+        
+  
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="index.html" accesskey="h">Home</a>
+            
+                <span>customer</span> 
+                <a href="owner.html">Owner </a> 
+            </div>
+    
+            <div class="theme-container">
+                <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+            </div>
+            
+            <form action="/search" method="get" class="search-box">
+                <input type="search" name="q" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-button"></button>
+            </form>
+        </div>
+        
+        <script src="script.js"></script>
+    
+
+
+        <div  class="background-box">
+         <div class="date">
+            <p>The current week's date is: <span id="currentWeekDate"></span></p>
+        </div>
+
+          <a href="Restaurant.html">
+         <div id="restaurantsContainer" class="background-box1">
+         <div class="rest1" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/Chinese_Restaurant.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+            <label for="china-restaurant" class="res-name">China Five Star</label>
+            <p class="res-des"> Serves authentic Chinese cuisine, offering a variety of flavorful dishes from different regions of China.</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.7 </h5>
+         </div>
+        </a>
+
+         <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/kfc.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+            <label for="KFC" class="res-name">KFC</label> 
+            <p class="res-des">KFC serves crispy fried chicken and savory sides.</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 3.9 </h5>
+         </div>
+         <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/krispy kreme.png" alt="Restaurant logo" width="170" height="130" class="reslogo" >
+            <label for="Krispy Kreme" class="res-name">Krispy Kreme</label> 
+            <p class="res-des"> Offers mouthwatering doughnuts and delicious beverages.</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.6 </h5>
+         </div>
+        </div>
+
+        <div class="background-box2" style="display: none;">
+         <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/burger king.png" alt="Restaurant logo" width="160" height="160" class="reslogo" >
+            <label for="Burger King" class="res-name">Burger King</label> 
+            <p class="res-des">Presents flame-grilled burgers and diverse menu options.</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.3 </h5>
+         </div>
+
+         <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/dominos.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+            <label for="Domino's Pizza" class="res-name">Domino's Pizza</label>
+            <p class="res-des">Dominos Pizza offers a wide variety of pizzas, pasta, and sides.</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.7 </h5>
+         </div>
+
+         <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+            <img src="img/joe&the juice.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+            <label for="Joe & The Juice" class="res-name">Joe & The Juice</label> 
+            <p class="res-des">Joe & the Juice serves fresh juices, smoothies, and sandwiches</p>
+            <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.9 </h5>
+         </div>
+        </div>
+
+        <div class="background-box3" style="display: none;">
+            <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+               <img src="img/baskin robbins.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+               <label for="Baskin Robbins" class="res-name">Baskin Robbins</label>  
+               <p class="res-des"> Presents an extensive selection of ice cream flavors and frozen treats.</p>
+               <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.9 </h5>
+            </div>
+   
+            <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+               <img src="img/shawarmer.png" alt="Restaurant logo" width="130" height="130" class="reslogo" >
+               <label for="Shawarmer" class="res-name">Shawarmer</label>  
+               <p class="res-des">Specializes in flavorful Middle Eastern shawarma sandwiches and platters.</p>
+               <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.4 </h5>
+            </div>
+   
+            <div class="rest1"  onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+               <img src="img/Cinnabon.png" alt="Restaurant logo" width="160" height="110" class="reslogo" >
+               <label for="Cinnabon" class="res-name">Cinnabon</label> 
+               <p class="res-des">Offers irresistible cinnamon rolls topped with creamy frosting.</p>
+               <h5 class="res-rate"><img src="img/orange.png" alt="Star" width="25" height="25"> 4.1 </h5>
+            </div>
+           </div>
+           <button id="moreButton" onclick="showMoreRestaurants()">More</button>
+         </div>
+
+
+
+           <footer>
+            <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+            <div class="contact">
+                <p>  <a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+                <p> <a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+                <p> <a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+            </div>
+           
+          </footer>
+
+          <script src="restaurants.js"></script>
+    </body>
+</html>

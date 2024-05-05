@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new cuisine</title>
+    <link rel="stylesheet" href="css/theme1.css">
+    <link rel="stylesheet" href="css/theme2.css">
+    <link rel="icon" href="img/logo.ico">  
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" accesskey="h">Home</a>
+        
+            <a href="restaurants.html">customer</a> 
+            
+            <span>
+                <a href="owner.html">Owner</a> </span> 
+        </div>
+
+        <div class="container">
+            <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+        </div>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+
+    <div class="addCuisine">
+        <h1>Add a new cuisine</h1>
+        <a href="owner.html">
+            <img src="img/x.png" alt="x" width="30" height="30" class="imgx">
+        </a>
+        
+        <form id="cform" action="#" method="post" enctype="multipart/form-data">
+            <div class="textname">
+                <h3 class="addElm">Name of meal:</h3>
+                <textarea id="namet" name="namet" rows="2" cols="30" placeholder="input text"></textarea>
+            </div>
+
+            <div class="textcalo">
+                <h3 class="addElm">Calories:</h3>
+                <textarea id="calot" name="calot" rows="2" cols="30" placeholder="input text"></textarea>
+            </div>
+
+            <div class="textphoto">
+                <h3 class="addElm">Photo:</h3>
+                <input type="file" id="photot" name="photot" accept="image/*">
+            </div>
+            
+
+            <div class="textprice">
+                <h3 class="addElm">Price:</h3>
+                <textarea id="pricet" name="pricet" rows="2" cols="30" placeholder="input text"></textarea>
+            </div>
+
+            <div class="textdes">
+                <h3 class="addElm">Description:</h3>
+                <textarea id="dest" name="dest" rows="4" cols="30" placeholder="input text"></textarea>
+            </div>
+
+           <button type="submit" class="add">Add</button>
+        </form>
+    </div>
+
+    <footer>
+        <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+        <div class="contact">
+            <p>  <a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+            <p> <a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+            <p> <a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+        </div>
+    </footer>   
+
+    <script src="add_cusine.js"></script>
+</body>
+</html>
+

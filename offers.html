@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new offer</title>
+    <link rel="stylesheet" href="css/theme1.css">
+    <link rel="icon" href="img/logo.ico">
+
+    <style>.delete-selected-button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #ff6347; 
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .delete-selected-button:hover {
+        background-color: #d63b20; 
+    }
+
+
+    .photo {
+                margin-bottom: 20px;
+            }
+            
+            .photo h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            
+            .photo input[type="file"] {
+                margin-left: 100px;
+                width: 50%; 
+                padding: 10px; 
+                border: 1px solid #000000; 
+                border-radius: 5px; 
+                font-size: 16px; 
+                box-sizing: border-box; 
+            }
+    </style>
+    
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" accesskey="h">Home</a>
+        
+            <a href="restaurants.html">customer</a> 
+            <span>
+                <a href="owner.html">Owner</a> </span> 
+        </div>
+
+        <div class="container">
+            <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+        </div>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+
+    <div id="ad">
+        <section class="offer-section">
+            <button id="delete-selected-button" class="delete-selected-button">Delete Selected Offers</button>
+            <div class="offer-container">
+                
+            </div>
+        </section>
+    
+        <section class="add-offer-section">
+            <p>Add a new offer</p>
+            <form id="mform" action="#" method="post">
+                <div class="offe-name">
+                    <label for="offer-name">Offer Name:</label>
+                    <input type="text" id="offer-name" name="offer-name" required>
+                </div>
+                <div class="photo">
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </div>
+   
+    <footer>
+        <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+        <div class="contact">
+            <p>  <a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+            <p> <a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+            <p> <a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+        </div>
+    </footer>
+
+    <script src="offers.js"></script>
+</body>
+</html>
+

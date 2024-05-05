@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="css/theme1.css">
+    <link rel="stylesheet" href="css/theme2.css">
+    <link rel="icon" href="img/logo.ico">  
+    
+</head>
+<body>
+     
+        
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" accesskey="h">Home</a>
+        
+            <span>customer</span> 
+
+            <a href="owner.html">Owner </a> 
+        </div>
+
+        <div class="theme-container">
+            <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+        </div>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+
+    <div class="eval">
+        <a href="Home.html">
+            <img src="img/x.png" alt="" width="30" height="30" class="img-x">
+        </a>
+        <h1>Thank you!</h1>
+        <h1>Your order has been submitted</h1>
+        <form id="evaluationForm" action="#" method="post" onsubmit="return checkSelection()"> 
+            <div class="box">
+                <h3>Rate this restaurant</h3>
+                <p>
+                    <img id="star1" src="img/star.png" alt="Star" width="80" height="80" onclick="changeImages1()">
+                    <img id="star2" src="img/star.png" alt="Star" width="80" height="80" onclick="changeImages2()">
+                    <img id="star3" src="img/star.png" alt="Star" width="80" height="80" onclick="changeImages3()">
+                    <img id="star4" src="img/star.png" alt="Star" width="80" height="80" onclick="changeImages4()">
+                    <img id="star5" src="img/star.png" alt="Star" width="80" height="80" onclick="changeImages5()">
+                    
+                </p>
+                <h3>Your feedback</h3>
+                <div class="feedback">
+                    <textarea id="textarea" name="textarea" rows="10" cols="58" placeholder="input text"></textarea>
+                </div>
+                <div class="prevRate">
+
+                    <select id="restSelect" name="restaurant">
+                        <optgroup label="The restaurants:" disabled>
+                            <option selected hidden value=""> Rate a previous restaurant </option>
+                        </optgroup>
+                        <option value="KFC"> KFC </option>
+                        <option value="Krespy kreme"> Krespy kreme</option>
+                        
+                    </select> 
+                </div>
+                <button type="submit" class="submit" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+        <div class="contact">
+            <p><a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+            <p><a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+            <p><a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+        </div>
+    </footer>
+
+    <script src="evaluation.js"></script>
+</body>
+</html>

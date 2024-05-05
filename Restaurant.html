@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant page</title>
+    <link rel="stylesheet" href="css/theme1.css">
+    
+    <link rel="icon" href="img/logo.ico">
+</head>
+
+<style>
+   .meal:hover {
+        transform: scale(1.1); 
+        transition: transform 0.3s ease; 
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" accesskey="h">Home</a>
+        
+            <span>customer</span>  
+        
+            <a href="owner.html">Owner </a> 
+        </div>
+
+        <div class="theme-container">
+            <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+        </div>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+    
+    
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+    
+    
+    <header>
+        <div class="header-restaurant">
+            <h1>China Five Star</h1>
+        </div>
+        <div class="logo1">
+            <img src="img/Chinese_Restaurant.png" alt="Logo">
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    <section class="meals">
+    
+        <div class="select-container">
+            <div class="styled-select">
+                <select id="sortSelect">
+                    <optgroup label="Sort" disabled>
+                        <option selected hidden>Sort</option>
+                    </optgroup>
+                    <option value="nameAsc">Sort by Name a-z</option>
+                    <option value="nameDesc">Sort by Name z-a</option>
+                    <option value="price">Sort by Price</option>
+                </select>
+            </div>
+            <div class="select-arrow"></div>
+        </div>
+        
+    
+        <!-- Main Dishes -->
+        <div class="category">
+           <h2>Main Dishes</h2>
+            <div class="meal-container">
+                <!-- meal 1 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Kung_Pao_Chicken.png" alt="Meal Image 1">
+                    </div>
+                    <h3 class="meal-name">Kung Pao Chicken</h3>
+                    <h6 class="meal-price">Price: $10</h6>
+                    <h6 class="meal-calories">Calories: 300</h6>
+                   
+                  <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                  <button class="quantity-btn minus" >-</button>
+                  <input type="text" class="quantity-input" value="1" readonly>
+                  <button class="quantity-btn plus" >+</button>
+                  </div>
+    
+                  <!-- Add to Cart button -->
+                  <button class="add-to-cart-button">Add to Cart</button>
+    
+    
+                    
+                </div>
+                <!-- meal 2 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Beef_with_Broccoli.png" alt="Meal Image 2">
+                    </div>
+                    <h3 class="meal-name">Beef with Broccoli</h3>
+                    <h6 class="meal-price">Price: $12</h6>
+                    <h6 class="meal-calories">Calories: 350</h6>
+                  <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                    <button class="quantity-btn minus" >-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                </div>
+                <!-- meal 3 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Sweet_and_Sour_Pork.png" alt="Meal Image 3">
+                    </div>
+                    <h3 class="meal-name">Sweet Pork</h3>
+                    <h6 class="meal-price">Price: $15</h6>
+                    <h6 class="meal-calories">Calories: 400</h6>
+                    <!-- Quantity adjustment buttons -->
+                    <div class="quantity-adjustment">
+                        <button class="quantity-btn minus" >-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="quantity-btn plus">+</button>
+                        </div>
+      
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart-button" >Add to Cart</button>
+       
+                </div>
+    
+                  <!-- meal 4 -->
+                  <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Shrimp.png" alt="Meal Image 3">
+                    </div>
+                    <h3 class="meal-name">Shrimp Noodles</h3>
+                    <h6 class="meal-price">Price: $20</h6>
+                    <h6 class="meal-calories">Calories: 400</h6>
+                    <!-- Quantity adjustment buttons -->
+                    <div class="quantity-adjustment">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="quantity-btn plus" >+</button>
+                        </div>
+      
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart-button">Add to Cart</button>
+       
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- Appetizers -->
+        <div class="category">
+    
+            <h2>Appetizers</h2>
+    
+            <div class="meal-container">
+                <!-- meal 1 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Mapo_Tofu.png" alt="Meal Image 4">
+                    </div>
+                    <h3 class="meal-name">Mapo Tofu</h3>
+                    <h6 class="meal-price">Price: $8</h6>
+                    <h6 class="meal-calories">Calories: 250</h6>
+                   <!-- Quantity adjustment buttons -->
+                   <div class="quantity-adjustment">
+                    <button class="quantity-btn minus" >-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                </div>
+                <!-- meal 2 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Chow_Mein.png" alt="Meal Image 5">
+                    </div>
+                    <h3 class="meal-name">Chow Mein</h3>
+                    <h6 class="meal-price">Price: $11</h6>
+                    <h6 class="meal-calories">Calories: 320</h6>
+                      <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                    <button class="quantity-btn minus" >-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus" >+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                </div>
+                <!-- meal 3 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Sweet_and_Sour_Chicken.png" alt="Meal Image 6">
+                    </div>
+                    <h3 class="meal-name">Sweet Chicken</h3>
+                    <h6 class="meal-price">Price: $14</h6>
+                    <h6 class="meal-calories">Calories: 380</h6>
+                 <!-- Quantity adjustment buttons -->
+                 <div class="quantity-adjustment">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                </div>
+    
+                    <!--meal 4-->
+                    <div class="meal">
+                        <div class="mealdiv-image">
+                            <img src="img/Soup.png" alt="Meal Image 3">
+                        </div>
+                        <h3 class="meal-name">Hot and Sour Soup</h3>
+                        <h6 class="meal-price">Price: $15</h6>
+                        <h6 class="meal-calories">Calories: 400</h6>
+                         <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                    </div>
+    
+    
+            </div>
+           
+        </div>
+    
+        <!-- Beverages -->
+        <div class="category">
+    
+            <h2>Beverages</h2>
+            
+            <div class="meal-container">
+        
+                <!-- meal 1 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Coca-Cola.png" alt="Meal Image 7">
+                    </div>
+                    <h3 class="meal-name">Coca-Cola</h3>
+                    <h6 class="meal-price">Price: $2</h6>
+                    <h6 class="meal-calories">Calories: 150</h6>
+                     <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button" >Add to Cart</button>
+    
+                </div>
+                <!-- meal 2 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/pepsi.png" alt="Meal Image 8">
+                    </div>
+                    <h3 class="meal-name">Pepsi</h3>
+                    <h6 class="meal-price">Price: $2</h6>
+                    <h6 class="meal-calories">Calories: 140</h6>
+                    <!-- Quantity adjustment buttons -->
+                    <div class="quantity-adjustment">
+                        <button class="quantity-btn minus" >-</button>
+                        <input type="text" class="quantity-input" value="1" readonly>
+                        <button class="quantity-btn plus" >+</button>
+                        </div>
+      
+                        <!-- Add to Cart button -->
+                        <button class="add-to-cart-button" >Add to Cart</button>
+       
+                </div>
+                <!-- meal 3 -->
+                <div class="meal">
+                    <div class="mealdiv-image">
+                        <img src="img/Beer_Dr_Pepper.png" alt="Meal Image 9">
+                    </div>
+                    <h3 class="meal-name">Beer Dr Pepper</h3>
+                    <h6 class="meal-price">Price: $2</h6>
+                    <h6 class="meal-calories">Calories: 130</h6>
+                   <!-- Quantity adjustment buttons -->
+                   <div class="quantity-adjustment">
+                    <button class="quantity-btn minus" >-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                </div>
+    
+                    <!-- meal 4 -->
+                    <div class="meal">
+                        <div class="mealdiv-image">
+                            <img src="img/fanta.png" alt="Meal Image 3">
+                        </div>
+                        <h3 class="meal-name">Fanta</h3>
+                        <h6 class="meal-price">Price: $2</h6>
+                        <h6 class="meal-calories">Calories: 400</h6>
+                       <!-- Quantity adjustment buttons -->
+                  <div class="quantity-adjustment">
+                    <button class="quantity-btn minus" >-</button>
+                    <input type="text" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn plus">+</button>
+                    </div>
+    
+                    <!-- Add to Cart button -->
+                    <button class="add-to-cart-button">Add to Cart</button>
+    
+                    </div>
+    
+                
+            </div>
+    
+        </div>
+    </section>
+    
+    <div id="cart">
+        <a href="cart.html">
+            <img src="img/cart.png" alt="Basket Image">
+        </a>
+    </div>
+    
+    
+    <footer>
+        <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+        <div class="contact">
+            <p>  <a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+            <p> <a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+            <p> <a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+        </div>
+       
+    </footer>
+    <script src="Restaurant.js"></script>
+   
+</body>
+</html>

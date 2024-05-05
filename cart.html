@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="css/theme1.css">
+    
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" accesskey="h">Home</a>
+        
+            <span>customer</span> 
+    
+            <a href="owner.html">Owner </a> 
+        </div>
+
+        <div class="theme-container">
+            <img src="img/sun.png" alt="Sun" id="theme-toggle" class="theme-toggle">
+        </div>
+        
+        <form action="/search" method="get" class="search-box">
+            <input type="search" name="q" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-button"></button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+    <form action="/search" method="get" class="search-box">
+        <input type="search" name="q" placeholder="Search... " class="search-input">
+        <button type="submit" class="search-button"></button>
+    </form>
+</div>
+
+<section class="cart">
+    <div class="cart-header">
+        <a href="Restaurant.html">
+            <img class="close-cart-button" src="img/x.png" alt="">
+        </a>
+        <h2 class="cart-title">My cart</h2>
+        <button class="empty-cart-button">Empty</button>
+    </div>
+    <div class="cart-content"></div>
+    <hr>
+    <div class="Ctotal">
+        <span>Total: </span><span id="Ctotal-price">12.00$</span>
+    </div>
+    <button class="Cbutton" onclick="location.href='evaluation.html'">Proceed to Checkout</button>
+</section>
+
+<footer>
+    <p id="copy">&copy; 2024 Test 11. Powered by Group</p>
+    <div class="contact">
+        <p>  <a href="https://www.instagram.com/FLAVORGO"><img src="img/instagram_icon.png" alt="Instagram"></a></p>
+        <p> <a href="mailto:contact@flavorgo.com"><img src="img/email_icon.png" alt="Email"></a></p>
+        <p> <a href="tel:+123-456-7890"><img src="img/phone_icon.png" alt="Phone"></a></p>
+    </div>
+</footer>
+
+<script src="Cart.js"></script>
+</body>
+</html>
