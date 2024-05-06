@@ -7,8 +7,11 @@
     <link id="theme" rel="stylesheet" href="/theme1.css"> 
     <link rel="icon" href="img/logo.ico">
     <style>
-       @media (max-width: @screen-sm-max) {
- 
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
     .navbar {
         padding: 0.5rem 0.3rem;
     }
@@ -30,18 +33,23 @@
         margin-left: 3rem !important;
     }
 
+    header {
+        margin-top: 3rem;
+        padding: 1.5rem 0;
+    }
+
     .header-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .vision h2 {
-        font-size: 4.5rem;
+        font-size: 3rem;
         margin-right: -1rem;
     }
 
     .vision p {
-        font-size: 1.5rem;
-        margin-left: 5rem;
+        font-size: 1.2rem;
+        margin-left: 3rem;
     }
 
     .offers h2,
@@ -76,10 +84,6 @@
         transform: translateX(2.5%);
     }
 }
-
-
-
-
 
 
 
